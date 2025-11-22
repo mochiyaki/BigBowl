@@ -8,7 +8,28 @@ BigBowl/
 ├── .env.example
 ├── requirements.txt
 ├── LICENSE
+├── SPEC.md                        # High-level specification/requirements
 ├── test.py                         # Local test runner / examples
+│
+├── backend/                       # Backend service (Python)
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   └── services/
+│   │       ├── analyzer.py
+│   │       ├── llm.py
+│   │       └── sourcify.py
+│   └── requirements.txt
+│
+├── frontend/                      # Frontend app (Vite + React + TS)
+│   ├── src/
+│   │   ├── App.tsx
+│   │   ├── api.ts
+│   │   └── main.tsx
+│   ├── index.html
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── vite.config.ts
 │
 ├── doc/                            # Project documentation
 │   ├── installation.md
@@ -93,5 +114,6 @@ BigBowl/
 
 ## Notes
 - `.env` is intentionally excluded via `.gitignore`. Use `.env.example` as a template.
+- Backend dependencies live under `backend/requirements.txt`; frontend uses `npm`/`pnpm` in `frontend/`.
 - LLM providers are modular under `spoon_ai/llm/providers` (OpenAI, Anthropic, Gemini, etc.).
 - The graph engine (`spoon_ai/graph`) provides `StateGraph`, `CompiledGraph`, and routing/interrupt APIs.
