@@ -24,3 +24,7 @@ Thumbs.db
 build/
 dist/
 *.egg-info/
+
+# node
+node_modules/
+package-lock.json
