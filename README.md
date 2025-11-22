@@ -78,6 +78,19 @@ BigBowl/
     └── test_neofs_utils.py
 ```
 
+## Getting Started
+- Create a virtual environment:
+  - Windows PowerShell: `python -m venv .venv; .\.venv\Scripts\Activate.ps1`
+  - Unix/macOS: `python -m venv .venv && source .venv/bin/activate`
+- Install dependencies: `pip install -r requirements.txt`
+- Configure environment:
+  - Copy `.env.example` to `.env` and fill in required keys (e.g., LLM API keys)
+- Run a demo:
+  - Chatbot streaming: `python examples\chatbot_streaming_demo.py`
+  - LLM manager sample: `python examples\llm_manager_example.py`
+  - Graph agent demo: `python examples\agent\graph_agent_demo.py`
+- Run tests: `pytest -q`
+
 ## Notes
 - `.env` is intentionally excluded via `.gitignore`. Use `.env.example` as a template.
 - LLM providers are modular under `spoon_ai/llm/providers` (OpenAI, Anthropic, Gemini, etc.).
