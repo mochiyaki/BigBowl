@@ -9,7 +9,6 @@ BigBowl/
 ├── requirements.txt
 ├── LICENSE
 ├── SPEC.md                        # High-level specification/requirements
-├── test.py                         # Local test runner / examples
 │
 ├── backend/                       # Backend service (Python)
 │   ├── app/
