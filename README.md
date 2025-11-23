@@ -30,6 +30,10 @@ BigBowl/
 │   ├── tsconfig.json
 │   └── vite.config.ts
 │
+├── smart-contract/                 # Solidity contracts
+│   ├── BigBank.sol
+│   └── BigBowl.sol
+│
 ├── doc/                            # Project documentation
 │   ├── installation.md
 │   ├── configuration.md
@@ -114,5 +118,6 @@ BigBowl/
 ## Notes
 - `.env` is intentionally excluded via `.gitignore`. Use `.env.example` as a template.
 - Backend dependencies live under `backend/requirements.txt`; frontend uses `npm`/`pnpm` in `frontend/`.
+- Solidity contracts live in `smart-contract/` and reference OpenZeppelin. Compile/deploy with your preferred EVM toolchain (e.g., Hardhat or Foundry).
 - LLM providers are modular under `spoon_ai/llm/providers` (OpenAI, Anthropic, Gemini, etc.).
 - The graph engine (`spoon_ai/graph`) provides `StateGraph`, `CompiledGraph`, and routing/interrupt APIs.
