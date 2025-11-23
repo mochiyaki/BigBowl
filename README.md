@@ -1,4 +1,4 @@
-# BigBowl 🍚 - AI Agent 🐧 Minting, Transfer, Edit, plus Smart Contract Audit and AI model interaction, etc. All-in-One Platform [![Static Badge](https://img.shields.io/badge/version-0.0.3-black?logo=github)](https://mochiyaki.github.io)
+# BigBowl 🍚 - AI Agent Minting, Transfer, Edit, plus Smart Contract Audit and AI model interaction, etc. All-in-One Platform [![Static Badge](https://img.shields.io/badge/version-0.0.3-black?logo=github)](https://mochiyaki.github.io)
 
 **Open your browser, connect MetaMask, analyze a smart contract, and mint an AI agent as an NFT that you own.**
 
