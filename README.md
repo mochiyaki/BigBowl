@@ -46,10 +46,15 @@ BigBowl/
 │   ├── index.js                  # Compiled JavaScript bundle
 │   ├── index.css                 # Styling
 │   └── package-lock.json
-├── frontend/                      # React frontend (alternative)
+├── frontend-ts/                   # React + TypeScript + Vite + Tailwind
 │   ├── package.json
 │   ├── vite.config.ts
+│   ├── tsconfig.json
+│   ├── tailwind.config.js
 │   └── src/
+│       ├── App.tsx
+│       ├── main.tsx
+│       └── index.css
 └── smart-contract/               # Smart contract files
     ├── BigBowl.sol
     └── BigBank.sol
@@ -146,7 +151,7 @@ BigBowl/
 ## Prerequisites
 
 - **Python 3.11+** (required for all dependencies)
-- **Node.js 18+** (optional, only needed if using React frontend)
+- **Node.js 18+** (needed for `frontend-ts/` dev server)
 - **MetaMask Browser Extension** (required for NFT minting)
 - **conda or venv** for Python environment management
 
@@ -257,6 +262,14 @@ START (User opens app in browser)
   - Manage WebSocket connections for chat
   - Trigger MetaMask wallet interactions
 - **Technology**: Vanilla JavaScript, Web3.js
+
+#### 2. **Frontend-TS (Rich UI)**
+- **Role**: Modern React UI with TypeScript and Tailwind
+- **Responsibilities**:
+  - Provide richer UX, routing, and components
+  - Integrate wallet and backend APIs
+  - Run local dev server via Vite
+- **Technology**: React, TypeScript, Vite, Tailwind CSS
 
 #### 2. **MetaMask Wallet**
 - **Role**: Secure wallet & transaction management
