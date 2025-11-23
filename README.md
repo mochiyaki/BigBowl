@@ -35,16 +35,16 @@ BigBowl/
 ├── backend/                       # FastAPI backend service
 │   ├── requirements.txt           # Backend-specific dependencies
 │   └── app/
-│       ├── main.py               # FastAPI application & endpoints
-│       ├── models.py             # Request/Response data models
+│       ├── main.py                # FastAPI application & endpoints
+│       ├── models.py              # Request/Response data models
 │       └── services/
-│           ├── analyzer.py       # Smart contract code analysis
-│           ├── llm.py            # LLM integration for summaries
-│           └── sourcify.py       # Sourcify API integration
+│           ├── analyzer.py        # Smart contract code analysis
+│           ├── llm.py             # LLM integration for summaries
+│           └── sourcify.py        # Sourcify API integration
 ├── frontend-js/                   # Pre-built vanilla JavaScript frontend
-│   ├── index.html                # Main HTML
-│   ├── index.js                  # Compiled JavaScript bundle
-│   ├── index.css                 # Styling
+│   ├── index.html                 # Main HTML
+│   ├── index.js                   # Compiled JavaScript bundle
+│   ├── index.css                  # Styling
 │   └── package-lock.json
 ├── frontend-ts/                   # React + TypeScript + Vite + Tailwind
 │   ├── package.json
@@ -55,7 +55,7 @@ BigBowl/
 │       ├── App.tsx
 │       ├── main.tsx
 │       └── index.css
-└── smart-contract/               # Smart contract files
+└── smart-contract/                # Smart contract files
     ├── BigBowl.sol
     └── BigBank.sol
 │   └── requirements.txt
