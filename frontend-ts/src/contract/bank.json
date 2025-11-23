@@ -1,0 +1,58 @@
+{
+    "11155111": {
+        "gguf": {
+            "address": "0x19E797FF0FEbdf52e2b8199Cff67b85E63942C52"
+        }
+    },
+    "560048": {
+        "gguf": {
+            "address": "0xEDeBb64Fa2D6DA4DD005B69f10Ec218b45E64fc9"
+        }
+    },
+    "abi": [
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "balances",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "deposit",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
+}
