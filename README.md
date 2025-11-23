@@ -27,6 +27,8 @@ Imagine the future of smart contract security and AI agents:
  - **🪙 Agent Ownership & Transfer**: Agents are owned on-chain and transferable between wallets
  - **⚡ On-Chain & Off-Chain Execution**: Agents can run on-chain for trustless execution or call out to off-chain LLMs when necessary
 
+![banner](bigBowl.png)
+
 ## Project Structure
 ```
 BigBowl/
