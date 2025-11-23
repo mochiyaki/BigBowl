@@ -69,7 +69,7 @@ contract BOWL is ERC721 {
 
     function mint(string memory _name, string memory _image, string memory _agent) public payable {
         require(!isClosed);
-        require(msg.value >= pigFee);
+        require(msg.value >= moFee);
         totalSupply++;
         mos[totalSupply] = Mo(totalSupply, _name, _image, _agent);
         _safeMint(msg.sender, totalSupply);
@@ -89,4 +89,5 @@ contract BOWL is ERC721 {
         );
         return string(abi.encodePacked('data:application/json;base64,', json));
     }
+
 }
